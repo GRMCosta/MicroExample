@@ -1,11 +1,11 @@
 package com.example.microservice.demo.domain.resource.data;
 
 import com.example.microservice.demo.domain.Instructor;
+import com.example.microservice.demo.domain.InstructorDetail;
 import lombok.*;
 
 @Data
 @Builder
-
 public class CreateInstructorRequest {
 
     private String firstName;
@@ -16,29 +16,15 @@ public class CreateInstructorRequest {
 
     private InstructorDetail instructorDetail;
 
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    private static class InstructorDetail{
-
-        private  String youtubeChannel;
-
-        private String hobby;
-    }
-
     public Instructor toInstructor(){
-        val instructorDetail = toInstructorDetail();
-
         return Instructor.builder()
                 .firtsName(firstName)
                 .lastName(lastName)
                 .email(email)
-                .instructorDetail()
+                .instructorDetail(InstructorDetail.builder()
+                    .youtubeChannel(instructorDetail.getYoutubeChannel())
+                    .hobby(instructorDetail.getHobby())
+                    .build())
                 .build();
-
     }
-    private InstructorDetail toInstructorDetail()
-
-
-
 }

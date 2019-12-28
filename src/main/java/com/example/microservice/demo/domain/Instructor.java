@@ -33,21 +33,4 @@ public class Instructor {
     @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
 
-    @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Table(name = "instructor_detail")
-    public class InstructorDetail{
-
-        @Id
-        @GeneratedValue(strategy= GenerationType.IDENTITY)
-        @Column(name = "id")
-        private Integer id;
-
-        @Column(name="youtube_channel")
-        private  String youtubeChannel;
-
-        @Column(name="hobby")
-        private String hobby;
-    }
 }

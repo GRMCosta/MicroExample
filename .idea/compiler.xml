@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="message-locator" />
         <module name="MicroExample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="message-locator" target="1.8" />
       <module name="MicroExample" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MicroExample" options="-parameters" />
+      <module name="message-locator" options="" />
     </option>
   </component>
 </project>

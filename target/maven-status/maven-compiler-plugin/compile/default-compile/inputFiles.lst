@@ -1,0 +1,7 @@
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/resource/CreateInstructorResource.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/Instructor.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/repository/InstructorRepository.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/MicroExampleApplication.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/resource/data/CreateInstructorRequest.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/InstructorDetail.java
+/home/gianraphael/Udemy/MicroExample/src/main/java/com/example/microservice/demo/domain/service/InstructorService.java

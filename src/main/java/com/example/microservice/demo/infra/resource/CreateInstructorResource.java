@@ -1,8 +1,9 @@
-package com.example.microservice.demo.domain.resource;
+package com.example.microservice.demo.infra.resource;
 
 
-import com.example.microservice.demo.domain.resource.data.CreateInstructorRequest;
+import com.example.microservice.demo.infra.resource.data.CreateInstructorRequest;
 import com.example.microservice.demo.domain.service.InstructorService;
+import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,9 +21,7 @@ public class CreateInstructorResource {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void instructor(@RequestBody CreateInstructorRequest request){
+    public void instructor(@Valid @RequestBody CreateInstructorRequest request){
         instructorService.createdInstructor(request);
     }
-
-
 }

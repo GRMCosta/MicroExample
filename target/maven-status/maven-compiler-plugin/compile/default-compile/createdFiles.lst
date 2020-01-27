@@ -1,0 +1,10 @@
+com/example/microservice/demo/domain/resource/CreateInstructorResource.class
+com/example/microservice/demo/domain/InstructorDetail$InstructorDetailBuilder.class
+com/example/microservice/demo/domain/Instructor$InstructorBuilder.class
+com/example/microservice/demo/domain/resource/data/CreateInstructorRequest.class
+com/example/microservice/demo/domain/resource/data/CreateInstructorRequest$CreateInstructorRequestBuilder.class
+com/example/microservice/demo/domain/Instructor.class
+com/example/microservice/demo/domain/service/InstructorService.class
+com/example/microservice/demo/MicroExampleApplication.class
+com/example/microservice/demo/domain/repository/InstructorRepository.class
+com/example/microservice/demo/domain/InstructorDetail.class

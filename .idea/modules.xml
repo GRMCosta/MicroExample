@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MicroExample.iml" filepath="$PROJECT_DIR$/MicroExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../messagelocator/message-locator.iml" filepath="$PROJECT_DIR$/../messagelocator/message-locator.iml" />
     </modules>
   </component>
 </project>

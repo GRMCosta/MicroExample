@@ -1,7 +1,7 @@
 package com.example.microservice.demo.domain.service;
 
 import com.example.microservice.demo.domain.repository.InstructorRepository;
-import com.example.microservice.demo.domain.resource.data.CreateInstructorRequest;
+import com.example.microservice.demo.infra.resource.data.CreateInstructorRequest;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.stereotype.Service;
@@ -18,6 +18,7 @@ public class InstructorService {
         log.info("Inicializing Instructor creation");
         val instructor = request.toInstructor();
         instructorRepository.save(instructor);
+
         log.info("Finalizing instructor creation");
     }
 }

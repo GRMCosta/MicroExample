@@ -53,6 +53,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>others</groupId>
+            <artifactId>message-locator</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+     
     </dependencies>
 
     <build>
